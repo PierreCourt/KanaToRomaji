@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Kana to Romaji</h1>
+  <h3>Train your hiragana and katakana</h3>
+  <Exercise/>
+  <hr>
+  <Reference></Reference>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Exercise from "@/components/Exercise";
+import Reference from "@/components/Reference";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Exercise,
+    Reference
   }
 }
 </script>
